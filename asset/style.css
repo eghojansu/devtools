@@ -67,3 +67,9 @@
     min-height: 300px;
     overflow: auto;
 }
+
+.checked-info {
+    color: red;
+    font-size: smaller;
+    font-weight: bold;
+}
