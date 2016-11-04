@@ -78,9 +78,17 @@ class h
 		return self::element('input', $attrs);
 	}
 
-	public static function text($name, array $attrs = [])
+    public static function text($name, array $attrs = [])
+    {
+        $default = ['type'=>'text'];
+        $attrs += $default;
+
+        return self::input($name, $attrs);
+    }
+
+	public static function file($name, array $attrs = [])
 	{
-		$default = ['type'=>'text'];
+		$default = ['type'=>'file'];
 		$attrs += $default;
 
 		return self::input($name, $attrs);
